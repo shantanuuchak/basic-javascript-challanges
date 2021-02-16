@@ -1,17 +1,17 @@
-// Write a program for fibonacci series from 1 to 20
+function display() {
+  var a = 20;
+  let n1 = 0,
+    n2 = 1,
+    nextTerm;
 
-const fibonacciNumber = (num) => {
-    let num1 = 0;
-    let num2 = 1;
-    let sum;
-    let i = 0;
+  console.log("Fibonacci Series:");
 
-    for(i = 0; i < num; i++){
-        sum = num1 + num2;
-        num1 = num2;
-        num2 = sum;
-    }
-    return num2;
-}
+  for (let i = 1; i <= a; i++) {
+    alert(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+  }
+};
 
-console.log(fibonacciNumber(4));
+display()
